@@ -1,0 +1,1024 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* I'm going to try and use SMACSS to organize my styles*/
+/* ====================================================================================================*/
+/*=======================================Base Rules====================================================*/
+/* ====================================================================================================*/
+
+body
+{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	background: #fafafa;
+}
+
+h1
+{
+	color: #39607a;
+}
+
+h2
+{
+	color: #39607a;
+}
+
+h3
+{
+	color: #39607a;
+}
+
+h4
+{
+	color: #39607a;
+}
+
+h5
+{
+	font-size: 1em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: .8em;
+	color: #003644;
+}
+
+p
+{
+	margin-top: .6em;
+	margin-bottom: .6em;
+}
+
+p.note
+{
+	text-indent: -3.5625em;
+	margin-left: 3.5625em;
+}
+
+p.noteBullet	/*notes for list bullets*/
+{
+	text-indent: -5.4375em;
+	margin-left: 5.4375em;
+}
+
+p.noteNumList
+{
+	text-indent: -6.125em;
+	margin-left: 6.125em;
+}
+
+p.TableColumn
+{
+	font-weight: bold;
+	margin: 1em;
+}
+
+p.TableText
+{
+	margin-bottom: .5em;
+	line-height: 1.5;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+p.TableNote
+{
+	line-height: 1.5;
+	text-indent: -3.3em;
+	margin-left: 6em;
+	margin-right: 1em;
+}
+
+td li
+{
+	margin-left: 2em;
+	line-height: 2;
+	margin-right: 1em;
+}
+
+td p.noteBullet
+{
+	text-indent: -3.3em;
+	margin-left: 6em;
+	margin-right: 1em;
+}
+
+p.footer
+{
+	font-size: .9em;
+	color: #003644;
+}
+
+img.topicLogo
+{
+	float: right;
+	padding-top: .3em;
+}
+
+/* ====================================================================================================*/
+/* ==================================== Layout Rules ==================================================*/
+/* ====================================================================================================*/
+/* ====================================================================================================*/
+/* ==================================== Module Rules ==================================================*/
+/* ====================================================================================================*/
+
+/* These are the styles for the 'Use this page to' section of the page descriptions. A div with a class of "use" will need to be wrapped around
+the p and ul (if there is one) in order for this to apply. */
+
+div.use
+{
+	background-color: #ceebff;
+	border-left: 6px solid #39607a;
+	padding-left: 4em;
+}
+
+div.use p
+{
+	-webkit-margin-after: -1em;
+}
+
+div.use ul
+{
+	padding-bottom: 1.5em;
+}
+
+div.use p:before
+{
+	content: "🗹";
+	font-size: 2em;
+	line-height: 2;
+	padding-right: .3em;
+	margin-left: -1.5em;
+}
+
+/* ====================================== SideMenu Skin =============================================== */
+
+/* The logo drop down uses the SideMenu Skin.
+Styles the selected item on menu differently than other items. */
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected
+{
+	font-size: 1.2em;
+}
+
+/* ====================================== ContextMenu Skin =============================================== */
+
+/* The side menu in the topics uses the ContextMenu skin.
+Styles the selected item on menu differently than other items. */
+
+ul.menu._Skins_ContextMenu.mc-component li > a.selected
+{
+	font-size: 1.2em;
+	color: #048bb3;
+}
+
+MadCap|expandingHead.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|dropDownHotSpot.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.glossterm
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+/* Styles from Top Nav Balboa template */
+
+a
+{
+	text-decoration: none;
+	color: #024467;
+}
+
+img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 100%;
+}
+
+img.thumbnail
+{
+	mc-thumbnail: popup;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #024467;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #000000;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	mc-breadcrumbs-prefix: 'You are here: ';
+}
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|xref:hover
+{
+	color: #024467;
+}
+
+MadCap|dropDownBody
+{
+	border-bottom: 1px solid #DEE2E7;
+}
+
+MadCap|dropDown	/*Change the "mc-open-image" and "mc-closed-image" properties to change the icons used in drop-downs*/
+{
+	mc-open-image: url('../Images/Assets/Icons/Arrows/arrow-down-gray.png');
+	mc-closed-image: url('../Images/Assets/Icons/Arrows/arrow-right-gray.png');
+}
+
+/*==Master Page Topic Layout==*/
+
+nav.title-bar	/*Adds bottom border on top navigation bar*/
+{
+	padding-bottom: 1em;
+	padding-left: 10%;
+	padding-right: 4%;
+}
+
+.title-bar-layout a.logo
+{
+	background: url('../Images/Assets/PlaceholderLogo/BOA_DSP_LogoC-5405.svg') no-repeat center center !important;
+	margin: -6em;
+	background-size: 3.4em;
+	height: 4em;
+}
+
+.search-bar .search-filter
+{
+	width: 55px;
+	background: #048cb3 url('../Images/Assets/Icons/MainIcons/whitefilter.svg') no-repeat center center !important;
+	background-size: 1.5em !important;
+	border-radius: 2px !important;
+}
+
+.search-bar .search-filter:hover
+{
+	width: 55px;
+	background: #048cb3 url('../Images/Assets/Icons/MainIcons/whitefilter.svg') no-repeat center center;
+	background-size: 1.5em !important;
+	border-radius: 2px;
+}
+
+.search-bar.search-bar-container .search-submit
+{
+	width: 55px;
+	border-radius: 2px;
+	background: #20aa97 url("../Images/Assets/Icons/MainIcons/white-magnifying-glass.svg") no-repeat center center;
+	background-size: 1.7em;
+}
+
+.search-bar.search-bar-container .search-submit:hover
+{
+	width: 55px;
+	border-radius: 2px;
+	background: #20aa97 url("../Images/Assets/Icons/MainIcons/white-magnifying-glass.svg") no-repeat center center;
+	background-size: 1.7em;
+}
+
+.search-filter-content
+{
+	border-radius: 2px;
+	border: double solid #444444;
+}
+
+div.top-bar	/*Contains the breadcrumbs and toolbar*/
+{
+	border-bottom: 1px solid #DEE2E7;
+	min-height: 50px;
+	/*Min-height is necessary for topics that are not included in a TOC*/
+}
+
+.nav-search
+{
+	width: 48%;
+	margin-left: 6em;
+	margin-top: -3.5em;
+	margin-bottom: 1em;
+	padding-top: .6em;
+}
+
+div.search-bar._Skins_SearchTopics.mc-component
+{
+	width: 44%;
+	margin-top: 16px;
+	margin-bottom: -30px;
+	margin-left: 33%;
+}
+
+div.row .row.collapse
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.off-canvas-wrapper-inner .out-row
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.main-section > .outer-row
+{
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*==Elements for the left side of Master Page layout==*/
+
+div.side-menu	/*This is the div that the menu proxy is contained in*/
+{
+	padding-left: 5px;
+	margin-top: 15px;
+}
+
+div.side-content	/*This is the div for the side-content containing "Search Tips" and the "Contact Support" button*/
+{
+	padding-top: 10px;
+}
+
+MadCap|dropDownHead.side-content	/*Font properties for the "Search Tips" drop-down head */
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+div.cta	/*Call to action button/Contact Support button*/
+{
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	padding: .1em 1em;
+	border: 1px solid #024467;
+	width: 18em;
+	color: #024467;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+	margin-top: 2em;
+	margin-left: 1em;
+}
+
+div.cta:hover	/*When hovering over the CTA button the following properties will apply*/
+{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transform: scale(1.01);
+}
+
+div.cta a
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+a.cta:link
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.cta:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#myBtn
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: #4fadc6;
+	/* Set a background color */
+	color: white;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
+}
+
+#myBtn:hover
+{
+	background-color: #555;
+	/* Add a dark-grey background on hover */
+}
+
+div.topic-layout	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.topic-layout > div:nth-child(1)
+{
+	margin-bottom: 2rem;
+	width: 58.667%;
+	margin-left: 0%;
+}
+
+div.topic-layout > div:nth-child(2)
+{
+	width: 36.333%;
+	margin-left: 4%;
+}
+
+div.topicFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1rem;
+	max-width: 100% !important;
+}
+
+div.topicFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topicFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topicFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.topicFooter > div:nth-child(1)
+{
+	width: 100%;
+	padding-top: .2em;
+	height: 1em;
+}
+
+div.topicFooter > div:nth-child(2)
+{
+	width: 13.667%;
+	margin-left: 12%;
+}
+
+div.topicFooter > div:nth-child(3)
+{
+	width: 35.333%;
+	margin-left: 2%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	height: 14em;
+	max-width: 28em;
+	background-image: url('../Images/DI_Community-Website5.svg');
+	margin-right: 2%;
+}
+
+div.topicFooter > div:nth-child(4)
+{
+	padding-top: 1rem;
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.topicFooter > div:nth-child(5)
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-bottom: 0em;
+	border-top: dotted 0px #317598;
+	border-top-color: #3f6075;
+	border-bottom-color: #317598;
+	border-bottom: dotted 2px #317598;
+	margin-top: -2em;
+}
+
+div.footer
+{
+	background-color: #E0E0E0;
+	width: 100%;
+	margin-top: 0px;
+}
+
+div.topicFooter a
+{
+	text-decoration: none;
+	color: #39607a;
+}
+
+div.pageDescriptions	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.pageDescriptions::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.pageDescriptions::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.pageDescriptions > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.pageDescriptions > div:nth-child(1)
+{
+	width: 30.33333%;
+	margin-left: 0%;
+}
+
+div.pageDescriptions > div:nth-child(2)
+{
+	width: 29.33333%;
+	margin-left: 5%;
+}
+
+div.pageDescriptions > div:nth-child(3)
+{
+	width: 19.33333%;
+	margin-left: 10%;
+}
+
+div.topicFooter > div:nth-child(6)
+{
+	width: 25%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+	margin-left: 16%;
+}
+
+div.topicFooter > div:nth-child(7)
+{
+	width: 25%;
+	margin-left: 4%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+}
+
+div.topicFooter > div:nth-child(8)
+{
+	width: 25%;
+	margin-left: 4%;
+}
+
+div.topicFooter > div:nth-child(9)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+.btn
+{
+	border: none;
+	/* Remove borders */
+	color: white;
+	/* Add a text color */
+	padding: 14px 28px;
+	/* Add some padding */
+	cursor: pointer;
+	/* Add a pointer cursor on mouse-over */
+	margin-left: 36%;
+	margin-top: 30%;
+}
+
+.more
+{
+	background-color: #f44336;
+}
+
+button.btn a
+{
+	color: white !important;
+}
+
+/* Red */
+
+.more:hover
+{
+	background: #da190b;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+
+	img
+	{
+		width: 40%;
+		padding-top: 0;
+	}
+
+	p.footer
+	{
+		font-size: .7em;
+	}
+
+	nav.title-bar .menu-icon
+	{
+		right: 2em;
+	}
+
+	div.row .row.collapse
+	{
+		padding-left: 8%;
+		padding-right: 6%;
+	}
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		padding-top: 1em;
+	}
+
+	.search-bar
+	{
+		width: 70%;
+		margin: 0 4%;
+	}
+
+	.nav-search
+	{
+		width: 84%;
+		margin-top: -2.8em;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		width: 64%;
+		margin-left: 0;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 32.667%;
+		margin-left: 1.3333%;
+	}
+
+	div.footer
+	{
+		height: 25%;
+	}
+
+	div.topicFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.topicFooter > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 6%;
+		max-height: 16em;
+		margin-right: 2%;
+	}
+
+	div.topicFooter > div:nth-child(3)
+	{
+		width: 38%;
+		margin-top: 1em;
+		max-width: 20em;
+		height: 11em;
+	}
+
+	div.topicFooter > div:nth-child(4)
+	{
+		width: 28%;
+		margin-left: 2%;
+	}
+
+	div.pageDescriptions > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.pageDescriptions > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.pageDescriptions > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.topicFooter > div:nth-child(5)
+	{
+		margin-top: -1em;
+	}
+
+	.btn
+	{
+		margin-left: 30%;
+		margin-top: 30%;
+	}
+
+	MadCap|breadcrumbsProxy
+	{
+		color: #317598;
+		font-size: 10pt;
+		font-style: italic;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* styles the hamburger icon to move 2em over from the right of the screen */
+
+	p.footer
+	{
+		font-size: .9em;
+	}
+
+	.title-bar .menu-icon span
+	{
+		margin-right: 2em;
+	}
+
+	img.topicLogo
+	{
+		float: none;
+	}
+
+	h5
+	{
+		-webkit-margin-before: 1.6em;
+		-webkit-margin-after: .6em;
+	}
+
+	nav.title-bar .menu-icon
+	{
+		right: 0em;
+	}
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		padding-bottom: 1em;
+	}
+
+	.nav-search
+	{
+		display: none;
+	}
+
+	div.MCBreadcrumbsBox_0
+	{
+		display: none;
+	}
+
+	div.row collapse
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	div.top-bar
+	{
+		min-height: 0;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 2%;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		display: none;
+	}
+
+	div.footer
+	{
+		position: relative;
+	}
+
+	div.topicFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.topicFooter > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0;
+		max-height: 17em;
+		margin-right: 2%;
+	}
+
+	div.topicFooter > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 2%;
+		margin-left: 0;
+		height: 13em;
+		max-width: 26em;
+	}
+
+	div.topicFooter > div:nth-child(4)
+	{
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-left: 0;
+	}
+
+	.btn
+	{
+		margin-left: 2%;
+		margin-top: 30%;
+	}
+
+	div.topicFooter
+	{
+		text-align: center;
+	}
+
+	p.copyright
+	{
+		text-align: center;
+	}
+
+	MadCap|bodyProxy
+	{
+		margin-bottom: 0px;
+	}
+
+	div.pageDescriptions > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.pageDescriptions > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.pageDescriptions > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.topicFooter > div:nth-child(6)
+	{
+		margin-left: 6%;
+	}
+
+	div.topicFooter > div:nth-child(8)
+	{
+		width: 25%;
+		margin-left: 4%;
+	}
+
+	div.cta
+	{
+		margin-left: 0;
+	}
+}
+
+@media print
+{
+	
+}
+
+/* Master Pages by component style classes */
+

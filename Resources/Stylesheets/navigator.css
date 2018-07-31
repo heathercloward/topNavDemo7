@@ -1,0 +1,224 @@
+/*<meta />*/
+
+div#topbar
+{
+	background: transparent;
+	position: fixed;
+	left: 11%;
+	top: 0.3em;
+	z-index: 1005;
+	width: 3em;
+	height: 5em;
+}
+
+div#topbar > #sections_btn_holder
+{
+	float: left;
+	width: 144px;
+	height: 46px;
+	padding-top: 2em;
+}
+
+div#topbar > #sections_btn_holder > button
+{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+div#topbar > #sections_panel
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 10000;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0,0,0);
+	/* Fallback color */
+	background-color: rgba(0,0,0,0.4);
+	/* Black w/ opacity */
+}
+
+div#components
+{
+	width: 22%;
+	margin-left: 11%;
+	margin-top: -2%;
+}
+
+/*div#topbar > #sections_panel > div {
+	height: 36em;
+
+}*/
+
+span#navarrow
+{
+	font-size: 1.3em;
+}
+
+span#navarrow:hover
+{
+	color: #20aa97;
+}
+
+/* feedback widget styles */
+
+div#feedback-survey
+{
+	margin-left: 1em;
+	background-color: #ceebff;
+	padding: 2em;
+	width: 86%;
+	border-radius: 1em;
+	padding-top: 1em;
+	margin-top: 2em;
+}
+
+.feedbackW
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: .4em;
+}
+
+.feedback-reason
+{
+	display: none;
+}
+
+.feedback-reason.no
+{
+	background-color: #ceebff;
+	padding: 1em;
+	width: 98%;
+	border-radius: 1em;
+	padding-top: .1em;
+}
+
+.feedback-question i:hover,
+.feedback-question i:focus,
+.feedback-question i:active
+{
+	cursor: pointer;
+}
+
+div.feedback-question
+{
+	color: #39607a;
+	font-size: 1.5em;
+}
+
+button.feedback-yes
+{
+	background-color: #20aa97;
+	/* green*/
+	border: none;
+	color: #fafafa;
+	padding: 1em 2em;
+	font-size: .7em;
+	margin-left: 1em;
+}
+
+button.feedback-yes:hover
+{
+	background-color: #179080;
+	/* slightly darker green*/
+	cursor: pointer;
+}
+
+button.feedback-no
+{
+	background-color: #ee3124;
+	/* red*/
+	border: none;
+	color: #fafafa;
+	padding: 1em 2em;
+	font-size: .7em;
+	margin-left: 1em;
+}
+
+button.feedback-no:hover
+{
+	background-color: #ca2b20;
+	/* slightly darker red*/
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div#topbar
+	{
+		left: 12%;
+		top: .5em;
+	}
+
+	div#components
+	{
+		width: 38%;
+		margin-left: 12%;
+		margin-top: -2.5%;
+	}
+
+	div#feedback-survey
+	{
+		width: 96%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div#topbar
+	{
+		left: 24%;
+	}
+
+	div.feedback-question
+	{
+		padding: 1em;
+		padding-top: .5em;
+	}
+
+	.feedback-reason.yes-thanks
+	{
+		padding: 1em;
+		padding-top: .5em;
+	}
+
+	div#components
+	{
+		display: block;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component
+	{
+		display: block;
+	}
+
+	div#components
+	{
+		width: 80%;
+		margin-left: 26%;
+		margin-top: -8.5%;
+	}
+
+	div#feedback-survey
+	{
+		width: 106%;
+		margin-left: 0em;
+		font-size: .9em;
+		padding: .5em;
+	}
+}
+
