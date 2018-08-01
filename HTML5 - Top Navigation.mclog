@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2018 Generated HTML5 - Top Navigation.fltar" Date="2018-07-31T20:50:59.8691413-04:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2018 Generated HTML5 - Top Navigation.fltar" Date="2018-08-01T07:06:38.5748083-04:00">
     <Messages>Compiling target HTML5 - Top Navigation...
 Removing previously generated content...
 Loading skin info...
@@ -7853,8 +7853,9 @@ Writing search entry cache...
 Generating final output...
 Generated Default.htm
 Saving result set...
+Warning: The file "Whats New in BackOffice Associates 6.7.htm" has been modified after the build started.
 Ignored Compiler Warnings: 6845
-Output generated in 10 minute(s) and 3 second(s).
+Output generated in 7 minute(s) and 30 second(s).
 
 Done
 Saving log to "C:\Users\Heather Cloward\Desktop\Output\HTML5 - Top Navigation\HTML5 - Top Navigation.mclog"
@@ -8269,6 +8270,7 @@ Saving log to "C:\Users\Heather Cloward\Desktop\Output\HTML5 - Top Navigation\HT
         <LogEntry Message="Generating alias file: Topic excluded from output: /Content/Catalog_Phrase_Translations_Generic.htm" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="20017" />
         <LogEntry Message="Generating alias file: Topic excluded from output: /Content/Catalog Page Phrases.htm" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="20017" />
         <LogEntry Message="Generating alias file: Topic excluded from output: /Content/Database_Types_H.htm" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="20017" />
+        <LogEntry File="../../../Content/Whats New in BackOffice Associates 6.7.htm" Message="Warning: The file &quot;Whats New in BackOffice Associates 6.7.htm&quot; has been modified after the build started." LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10127" />
     </Warnings>
     <Errors />
 </MadCapLog>
