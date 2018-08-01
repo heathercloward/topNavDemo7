@@ -109,6 +109,11 @@ p.footer
 	color: #003644;
 }
 
+p.footer a:hover
+{
+	color: #008fb4;
+}
+
 img.topicLogo
 {
 	float: right;
